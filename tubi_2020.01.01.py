@@ -110,7 +110,7 @@ while (html_exist == False):
 
 # Initialize database
 try:
-	con = psycopg2.connect("dbname=TDMain user=lance password=trailerclip")
+	con = psycopg2.connect("")
 	cur = con.cursor()
 except Exception as e:
 	logs.write(str(datetime.now().replace(microsecond=0)) + ", " + str(e) + ", " + traceback.format_exc() + "\n")
